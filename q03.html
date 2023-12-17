@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 페이지</title>
+    <style>
+        header img {
+            width: 100%;
+            max-width: 100%;
+            height: 380px;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ddd;
+            color:black;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a{
+            text-decoration: none;
+            color:black;
+            margin: 0 15px;
+        }
+
+        main {
+            display: flex;
+            flex:1;
+            padding:1em;
+        }
+
+        main .content, aside {
+            padding: 1em;
+            padding-bottom: 110px;
+        }
+
+        main img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 0;
+            float: left;
+        }
+        main .content {
+            flex:1;
+            padding:1em;
+            float: left;
+        }
+       
+        aside {
+             background-color: #f2f2f2;
+             padding: 1em;
+             float: right;
+             width:300px;
+             text-align: center;
+        }
+        aside a{
+            text-decoration: none;
+            color:blueviolet;
+            margin: 0 15px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            bottom:50px;
+            text-align: center;
+            height: 30px;
+            width:100%;
+            
+        }
+
+        @media only screen and (max-width: 600px) {
+            /* 스마트폰과 같은 작은 화면에 대한 스타일링 */
+            nav {
+                flex-direction: column;
+            }
+            main {
+                float: left;
+                width: 70%;
+            }
+            aside {
+                float: right;
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img class="header-image" src="disney_main.jpg">
+        <h2>Welcome to the Disney World ! </h2>
+    </header>
+
+
+    <nav>
+        <a href="#">Magic Kingdom</a>
+        <a href="#">Hollywood Studios</a>
+        <a href="#">EPCOT</a>
+        <a href="#">Animal Kingdom</a>
+    </nav>
+    <main>
+        <div class="content">
+        <!-- Main content goes here -->
+        <h2>크리스마스는 디즈니 친구들과 함께!</h2>
+        <p>크리스마스 특별 공연에 초대합니다.</p>
+        <br>
+        <p>디즈니 100주년과 크리스마스를 맞이하여 올랜도 디즈니 월드에서는 월트디즈니 컴퍼니의 작품들로 구성된 ‘디즈니 특별전’이 진행된다.<br><br>
+
+            2023 디즈니 특별전에는 '환타지아'(1940), '인어공주'(1989), '알라딘'(1992), '토이 스토리'(1995), '주토피아'(2016), '모아나'(2016) 등 6개의 디즈니 대표작을 상영한다.<br><br>
+            
+            영화 '인어공주', '알라딘', '모아나'를 공동 연출한 존 머스커(John Musker) 감독, '주토피아', '엔칸토 : 마법의 세계' 협력 프로듀서 브래드 사이먼슨(Brad Simonsen), '겨울왕국', '라야와 마지막 드래곤' 등에 참여한 아담 레비(Adam Levy) 애니메이터는 국제경쟁 단편 감독/프로듀서로 영화제에 참가하고, '버즈 라이트이어', '코코', '인사이드 아웃' 애니메이터 쉐 드 브래드버리(Shad Bradbury)는 국제경쟁 심사위원으로 방한한다.<br><br>
+            
+            국제애니메이션페스티벌 2023은 12월 한 달 동안 열린다.</p>
+            <img class="main-image" src="m_ch.jpg">
+            <p>디즈니 월드는 매직킹덤, 할리우드스튜디오, 앱콧, 애니멀킹덤으로 크게 네 구역으로 나눠져 있다.</p>
+        </div>
+        <aside>
+            <!-- Aside content goes here -->
+            <h2><strong>판타스틱 디즈니</strong></h2>
+            <a href="#">크리스마스 한정판 MD</a><br><br>
+            <a href="#">홀리데이 선물이 팡팡!</a><br><br>
+            <a href="#">디즈니 플러스</a><br><br>
+            <a href="#">리조트 예약</a><br><br>
+            <a href="#">크루즈 예약</a><br><br>
+            <a href="#">디즈니 친구들과 추억 쌓기</a><br><br>
+            <a href="#">미키와 떠나는 모험</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </aside>
+    </main>
+      
+    <footer>
+        <p>&copy; 2023 즈니즈니</p>
+    </footer>
+
+</body>
+</html>
