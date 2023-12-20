@@ -1,0 +1,153 @@
+header img {
+    width: 100%;
+    max-width: 100%;
+    height: 380px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    background-color: #ddd;
+    color:black;
+    padding: 15px;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+    margin: 0 15px;
+}
+
+main {
+    display: flex;
+    flex:1;
+    padding:1em;
+}
+
+main .content, aside {
+    padding: 1em;
+    padding-bottom: 110px;
+}
+
+main img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0;
+    float: left;
+}
+main .content {
+    flex:1;
+    padding:1em;
+    float: left;
+}
+
+.aside {
+     background-color: #f2f2f2;
+     padding: 1em;
+     float: right;
+     width:500px;
+     text-align: center;
+}
+
+aside a{
+    text-decoration: none;
+    color:blueviolet;
+    margin: 0 15px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    bottom:50px;
+    text-align: center;
+    height: 30px;
+    width:100%;
+    
+}
+
+.aside_section{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* 모바일 화면에서 css 속성 정하기 */
+@media (max-width: 800px) {
+    /* 스마트폰과 같은 작은 화면에 대한 스타일링 */
+
+    main{
+        display: none;
+    }
+
+    .mobile{
+
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .mobile_content{
+        display: "";
+
+        width: 100%;
+        font-family: clover;
+        color: rgb(71, 155, 233);
+        background-color: rgb(245, 208, 245);
+    }
+    .mobile_aside{
+
+        top: 100px;
+        background-color: #f2f2f2;
+        padding: 1em;
+        float: right;
+        width:250px;
+        text-align: center;
+    }
+
+    .mobile_main-image{   
+        width: 70%;
+    }
+
+}
+
+/* pc화면에서 css 속성 정하기 */
+@media (min-width: 800px){
+
+    .mobile_content{
+        display: none;
+    }
+
+    .mobile_aside{
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: clover;
+    src: url(./clover.ttf);
+}
